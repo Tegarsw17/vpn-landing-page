@@ -173,6 +173,16 @@ body{
     gap: 15px;
 }
 
+.feature-text-list ul{
+    line-height: 30px;
+    --fa-li-width: 60px;
+}
+
+.feature-text-list ul li{
+    font-size: 14px;
+    color: #4F5665;
+}
+
 .feature-text-list-data{
     display: flex;
     align-items: center;
@@ -266,6 +276,12 @@ body{
     width: 24px;
     height: 24px;
     background-color: #2FAB73;
+}
+
+.pricing-card-feature ul{
+    /* list-style-type: none; */
+    --fa-li-width: 40px;
+    line-height: 30px;
 }
 
 .pricing-card-bottom{
