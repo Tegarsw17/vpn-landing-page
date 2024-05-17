@@ -19,7 +19,6 @@ body{
 
 .navbar-list {
     display: flex;
-    /* width: 45%; */
     gap: 40px;
     justify-content: space-between;
 }
@@ -50,9 +49,6 @@ body{
     border-radius: 50px;
 }
 
-.hero-wrapper{
-    /* background: skyblue; */
-}
 
 .hero{
     max-width: 1140px;
@@ -66,7 +62,6 @@ body{
 .hero-text{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: flex-start;
 }
 
@@ -98,12 +93,10 @@ body{
 }
 
 .provide-wrapper{
-    /* background-color: skyblue; */
     padding: 50px 0px;
 }
 
 .provide{
-    /* background-color: skyblue; */
     max-width: 1140px;
     height: 200px;
     margin: 0 auto;
@@ -145,12 +138,10 @@ body{
 }
 
 .feature-wrapper{
-    /* background-color: hotpink */
     padding: 50px 0px;
 }
 
 .feature{
-    /* background-color: skyblue; */
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
@@ -180,6 +171,16 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.feature-text-list ul{
+    line-height: 30px;
+    --fa-li-width: 60px;
+}
+
+.feature-text-list ul li{
+    font-size: 14px;
+    color: #4F5665;
 }
 
 .feature-text-list-data{
@@ -216,7 +217,6 @@ body{
     max-width: 555px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     text-align: center;
     margin-bottom: 60px;
 }
@@ -278,6 +278,12 @@ body{
     background-color: #2FAB73;
 }
 
+.pricing-card-feature ul{
+    /* list-style-type: none; */
+    --fa-li-width: 40px;
+    line-height: 30px;
+}
+
 .pricing-card-bottom{
     text-align: center;
 }
@@ -290,7 +296,6 @@ body{
 }
 
 .pricing-card-bottom p span{
-    /* font-size: 25px;  */
     font-weight: 400;
     color: #4F5665;
 }
@@ -353,7 +358,6 @@ body{
 .sponsor{
     max-width: 1140px;
     margin: 0 auto;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -365,7 +369,7 @@ body{
 }
 
 .testimonial-wrapper{
-    padding: 50px 0px 150px 0px;
+    padding: 50px 0px 180px 0px;
 }
 
 .testimonial{
@@ -396,8 +400,6 @@ body{
 }
 
 .testimonial-card-list{
-    /* overflow: hidden; */
-    /* max-width: 1140px; */
     margin: 60px 0px;
     display: flex;
     justify-content: flex-start;
@@ -405,7 +407,6 @@ body{
 }
 
 .testimonial-card{
-    /* background: skyblue; */
     width: 400px;
     height: 230px;
     border-radius: 10px;
@@ -436,7 +437,6 @@ body{
 .testimonial-card-profile img{
     width: 100%;
     height: auto;
-    /* border-radius: 50%; */
 }
 
 .testimonial-card-text p:first-child{
@@ -465,6 +465,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .testimonial-pagination{
@@ -476,31 +477,79 @@ body{
     height: 50px;
     border-radius: 50%;
     border: none;
-    /* display: flex; */
 }
 
 .testimonial-button button:first-child{
-    /* transform: rotate(180deg); */
     color: #F53838;
     background: #ffffff;
     border: 2px solid #F53838;
     margin-right: 20px;
 }
 .testimonial-button button:last-child{
-    /* transform: rotate(180deg); */
-    /* width: 32px; */
     color: #fff;
     background: #F53838;
 }
 
 .testimonial-button button img{
-    /* width: 30px; */
     padding: 15px;
 }
 
-.footer-wrapper{
-    padding: 180px 0px 100px 0px;
+.subscribe-wrapper{
     background-color: #f8f8f8;
+    position: relative;
+    height: 190px;
+}
+
+.subscribe{
+    background-color: #ffffff;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 70px;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 34px -3px rgba(0,0,0,0.1);
+    bottom: 125px;
+    position: relative;
+    z-index: 10; 
+}
+
+.subscribe-description{
+    width: 410px;
+}
+
+.subscribe-description p:first-child{
+    width: 370px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.subscribe-description p:last-child{
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.subscribe button{
+    width: 250px;
+    height: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #F53838;
+    border: none;
+    box-shadow: 0px 32px 50px -6px rgba(245, 56, 56, 0.4);
+}
+
+.footer-wrapper{
+    padding: 0px 0px 100px 0px;
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: -11;
 }
 
 .footer{
@@ -523,6 +572,7 @@ body{
     color: #4F5665;
     line-height: 30px;
 }
+
 .footer-description span{
     font-weight: 500;
 }
@@ -563,5 +613,4 @@ body{
 .footer-list-page ul li{
     font-size: 16px;
     color: #4F5665;
-    
 }
